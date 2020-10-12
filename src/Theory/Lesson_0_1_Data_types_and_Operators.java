@@ -111,7 +111,7 @@ class Lesson_1_5_Variables {
     }
 }
 
-class Increment_and_Decrement {
+class Lesson_1_6_Increment_and_Decrement {
     public static void main(String[] args) {
         int a1 = 1;
         System.out.println(a1++);
@@ -119,6 +119,70 @@ class Increment_and_Decrement {
 
         int a2 = 1;
         System.out.println(++a2); //префиксная форма дает результат сразу
+    }
+}
+
+class Lesson_1_7_Logical_Operators {
+    public static void main(String[] args) {
+        int i, j;
+        boolean b1, b2;
+
+        i = 10;
+        j = 11;
+
+        if (i < j) System.out.println("i < j");
+        if (i <= j) System.out.println("i <= j");
+        if (i != j) System.out.println("i != j");
+        if (i == j) System.out.println("i == j false");
+        if (i >= j) System.out.println("i >= j false");
+        if (i > j) System.out.println("i > j false");
+
+        b1 = true;
+        b2 = false;
+
+        if (b1 & b2) System.out.println("false");
+        if (!(b1 & b2)) System.out.println("!(b1 & b2): true");
+        if (b1 | b2) System.out.println("b1 | b2: true");
+        if (b1 ^ b2) System.out.println("b1 ^ b2: true");
+
+        int n, d, q;
+
+        n = 10;
+        d = 2;
+
+        if (d != 0 && (n % d) == 0) System.out.println(d + " является делителем " + n);
+        d = 0; // установить для d нулевое значение
+
+        // 2-й операнд не вычисляется поскольку значение перменной d = 0
+        if (d != 0 & (n % d) == 0) System.out.println(d + " является делителем" + n);
+
+    }
+}
+
+class Lesson_1_8_Casting_incompatible_types {
+    public static void main(String[] args) {
+        double x , y;
+        byte b;
+        int i;
+        char ch;
+
+        x = 10.0;
+        y = 3.0;
+
+        i = (int) (x / y); //привели тип double к типу int
+        System.out.println("целочисленный результат деление: " + i);
+
+        i = 100;
+        b = (byte) i;
+        System.out.println("Значение b: " + b);
+
+        i = 257;
+        b = (byte) i;
+        System.out.println("Значение b: " + b);
+
+        b = 88;
+        ch = (char) b;
+        System.out.println("ch: " + ch);
     }
 }
 
