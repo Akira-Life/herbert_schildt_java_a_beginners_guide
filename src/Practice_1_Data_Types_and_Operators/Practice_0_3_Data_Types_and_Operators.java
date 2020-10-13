@@ -1,6 +1,4 @@
-package Practice;
-
-import java.util.Scanner;
+package Practice_1_Data_Types_and_Operators;
 
 /*
         Нужно выявить все простые числа от 2 до N-ое

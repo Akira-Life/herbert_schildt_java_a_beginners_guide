@@ -1,4 +1,4 @@
-package Theory;
+package Theory_1_Data_Types_and_Operators;
 
 //расчет числа кубических дюймов в кубе
 public class Lesson_0_1_Data_types_and_Operators {

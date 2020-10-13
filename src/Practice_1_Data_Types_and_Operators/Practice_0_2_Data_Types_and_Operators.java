@@ -1,4 +1,4 @@
-package Practice;
+package Practice_1_Data_Types_and_Operators;
 
 public class Practice_0_2_Data_Types_and_Operators {
     public static void main(String[] args) {

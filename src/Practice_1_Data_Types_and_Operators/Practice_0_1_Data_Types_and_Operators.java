@@ -1,4 +1,4 @@
-package Practice;
+package Practice_1_Data_Types_and_Operators;
 /*
     упражнение 2.1
     Вычислите растояние до места вспышки молнии, звук которого
