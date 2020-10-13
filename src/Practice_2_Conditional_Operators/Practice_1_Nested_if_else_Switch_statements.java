@@ -118,6 +118,25 @@ class contune_test {
     }
 }
 
+/*
+        напишите программу которая считывает символы с клавиатуры
+        до тех пор, пока не встрерится точка
+ */
+
+class Test_1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        char userSymbol;
+        char stop = '.';
+        while (true) {
+            userSymbol = scanner.next().charAt(0);
+            if (userSymbol != stop) {
+                System.out.println(userSymbol);
+            }else if (userSymbol == stop) break;
+        }
+    }
+}
+
 
 
 
