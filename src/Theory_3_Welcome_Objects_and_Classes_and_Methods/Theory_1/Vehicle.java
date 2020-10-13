@@ -9,6 +9,10 @@ public class Vehicle {
         return fuelcap * mpg;
     }
 
+    double fuelneeded(int miles) {
+        return (double) miles / mpg;
+    }
+
 }
 
 class VehicleDemo {
@@ -35,6 +39,8 @@ class TwoVehicles {
     public static void main(String[] args) {
         Vehicle miniven1 = new Vehicle();  //   КАЖДЫЙ ОБЪЕКТ СОДЕРЖИТ КОПИИ МЕРЕМЕННЫХ ЭКЗЕМПЛЯРА
         Vehicle sportscar = new Vehicle();
+        double gallons1, gallons2;
+        int dist = 252;
 
         int range1, range2;
         //присваивание полям объекта miniven
@@ -46,6 +52,9 @@ class TwoVehicles {
         sportscar.passengers = 2;
         sportscar.fuelcap = 14;
         sportscar.mpg = 12;
+
+        gallons1 = miniven1.fuelneeded(dist);
+        gallons2 = sportscar.fuelneeded(dist);
 
         //расчет дальности поездки с полным баком горючего
         range1 = miniven1.fuelcap * miniven1.mpg;
