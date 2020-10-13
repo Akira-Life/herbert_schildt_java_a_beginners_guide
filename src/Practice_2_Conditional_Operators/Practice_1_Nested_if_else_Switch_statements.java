@@ -137,6 +137,32 @@ class Test_1 {
     }
 }
 
+class Test_2 {
+    public static void main(String[] args) {
+        for (int i = 1000; i >= 0; i -= 2) {
+            System.out.println(i);
+        }
+    }
+}
+
+class Test_3 {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + " ");
+            if ((i % 2) == 0) continue;
+            System.out.println();
+        }
+    }
+}
+
+class Test_4 {
+    public static void main(String[] args) {
+        for (int i = 1; i < 100; i = i * 2) {
+            System.out.println(i);
+        }
+    }
+}
+
 
 
 
