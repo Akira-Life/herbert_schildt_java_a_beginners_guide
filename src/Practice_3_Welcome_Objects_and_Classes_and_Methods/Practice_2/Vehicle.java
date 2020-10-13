@@ -1,5 +1,9 @@
 package Practice_3_Welcome_Objects_and_Classes_and_Methods.Practice_2;
 
+/*
+        параметры конструктора
+ */
+
 public class Vehicle {
     int passenger; //количество пассажиров
     int fuelcap;   //емкость топливного бака
